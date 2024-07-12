@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flags</title>
+    <link href="/src/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="bg-2Very-Light-Gray-Light-Mode-Background min-h-screen">
+      <nav class="flex justify-between p-5">
+        <h1>Where in the World</h1>
+        <h1>Dark Mode</h1>
+      </nav>
+      <div class="flex flex-col items-center border-4 gap-5 p-5 h-full">
+        <input
+          id="search-filter"
+          placeholder="Search for a country"
+          class="shadow-lg w-full p-3 rounded-lg"
+        />
+
+        <form class="space-y-4 self-start">
+          <select
+            id="region-filter"
+            name="regions"
+            class="shadow-lg w-full p-2 border border-gray-300 rounded-lg flex flex-col font-normal"
+          >
+            <option value="" disabled selected>Filter by Region</option>
+            <option value="Africa">Africa</option>
+            <option value="America">America</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="Oceania">Oceania</option>
+          </select>
+        </form>
+        <div id="flags-container" class="p-10 w-full flex flex-col gap-10">
+          <div class="flex flex-col shadow-lg">
+            <img src="https://flagcdn.com/de.svg" alt="Germany" />
+            <div class="p-5">
+              <h1 class="font-bold">Germany</h1>
+              <div>
+                <div class="flex gap-2">
+                  <h1>Population:</h1>
+                  <h2>81.770.900</h2>
+                </div>
+                <div class="flex gap-2">
+                  <h1>Region:</h1>
+                  <h2>Europe</h2>
+                </div>
+                <div class="flex gap-2">
+                  <h1>Capital:</h1>
+                  <h2>Berlin</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="/main.js"></script>
+</html>
