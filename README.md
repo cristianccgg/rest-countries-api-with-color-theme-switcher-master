@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/cristianccgg/rest-countries-api-with-color-theme-switcher-master.git)
-- Live Site URL: [Add live site URL here](https://rest-countries-api-with-color-theme-switcher-master-seven-ruby.vercel.app)
+- Live Site URL: [Add live site URL here](https://rest-countries-api-with-color-theme-switcher-master-liard.vercel.app)
 
 ## My process
 
