@@ -5,16 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flags</title>
     <link href="/src/output.css" rel="stylesheet" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <main class="bg-light-very-light-gray-background min-h-screen dark:bg-dark-very-dark-blue-background">
-      <nav class="flex justify-between p-5 md:px-16 border-b-4 dark:bg-dark-dark-blue-elements dark:border-dark-very-dark-blue-background">
-        <h1 class="font-semibold text-xl dark:text-light-very-light-gray-background">Where in the World</h1>
-        <button  onclick="toggleDarkMode()" class="flex items-center gap-2">
-          <i class='bx bxs-moon dark:text-white'></i>
-          
-          <h1 id="dark-text" class="dark:text-light-white-text-elements">Dark Mode</h1>
+    <main
+      class="bg-light-very-light-gray-background min-h-screen dark:bg-dark-very-dark-blue-background"
+    >
+      <nav
+        class="flex justify-between p-5 md:px-16 border-b-4 dark:bg-dark-dark-blue-elements dark:border-dark-very-dark-blue-background"
+      >
+        <h1
+          class="font-semibold text-xl dark:text-light-very-light-gray-background"
+        >
+          Where in the World
+        </h1>
+        <button onclick="toggleDarkMode()" class="flex items-center gap-2">
+          <i class="bx bxs-moon dark:text-white"></i>
+          <h1 id="dark-text" class="dark:text-light-white-text-elements">
+            Dark Mode
+          </h1>
         </button>
       </nav>
       <div class="flex flex-col items-center gap-5 h-full p-5">
@@ -30,11 +42,9 @@
             <select
               id="region-filter"
               name="regions"
-              class="shadow-lg w-full h-10 align-middle dark:bg-dark-dark-blue-elements dark:text-light-white-text-elements" p-2 border border-gray-300 rounded-lg flex flex-col font-normal"
+              class="shadow-lg w-full h-10 text-center dark:bg-dark-dark-blue-elements dark:text-light-white-text-elements p-2 border border-gray-300 rounded-lg font-normal"
             >
-              <option value="" selected>
-                Filter by Region
-              </option>
+              <option value="" selected>Filter by Region</option>
               <option value="Africa">Africa</option>
               <option value="Americas">Americas</option>
               <option value="Asia">Asia</option>
@@ -43,34 +53,13 @@
             </select>
           </form>
         </div>
-
         <div
           id="flags-container"
           class="p-10 w-full flex flex-col gap-10 md:grid md:grid-cols-4"
-        >
-          <div class="flex flex-col shadow-lg md:col-auto bg-light-white-text-elements dark:bg-dark-dark-blue-elements dark:text-light-white-text-elements">
-            <img src="https://flagcdn.com/de.svg" alt="Germany" />
-            <div class="p-5">
-              <h1 class="font-bold">Germany</h1>
-              <div class="dark:bg-dark-dark-blue-elements dark:text-light-white-text-elements">
-                <div class="flex gap-2">
-                  <h1>Population:</h1>
-                  <h2>81.770.900</h2>
-                </div>
-                <div class="flex gap-2">
-                  <h1>Region:</h1>
-                  <h2>Europe</h2>
-                </div>
-                <div class="flex gap-2">
-                  <h1>Capital:</h1>
-                  <h2>Berlin</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        ></div>
       </div>
+      <dialog id="modal"></dialog>
     </main>
+    <script src="/main.js"></script>
   </body>
-  <script src="/main.js"></script>
 </html>
